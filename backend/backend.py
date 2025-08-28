@@ -1,7 +1,7 @@
 
 #python3 -m uvicorn main:app --host 0.0.0.0 --port 5000 --reload
 
-# Corrected imports for LangChain
+
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_huggingface import HuggingFacePipeline 
@@ -39,18 +39,18 @@ else:
 
 print(f"Using device: {device}")
 
-Indicate start of embedding model loading
+#Indicate start of embedding model loading
 print("Loading embedding model...")
 embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 print("Embedding model loaded.")
 
-Indicate start of vectorstore loading
+#Indicate start of vectorstore loading
 print("Loading FAISS vectorstore...")
 # Ensure 'faiss_index' directory is in the correct location relative to where you run main.py
 vectorstore = FAISS.load_local("faiss_index/", embedding_model, allow_dangerous_deserialization=True)
 print("FAISS vectorstore loaded.")
 
-Replace "ADD ID TOKEN HERE" with your actual Hugging Face token if needed
+#Replace "ADD ID TOKEN HERE" with your actual Hugging Face token if needed
 model_name = "mistral_model"  # Point to the local directory
 print(f"Loading tokenizer from {model_name}...")
 tokenizer = AutoTokenizer.from_pretrained(model_name, token="ADD ID TOKEN HERE")
