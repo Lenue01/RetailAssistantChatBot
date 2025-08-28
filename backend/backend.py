@@ -1,7 +1,9 @@
 
+#use this to run the FastAPI
 #python3 -m uvicorn main:app --host 0.0.0.0 --port 5000 --reload
 
 
+#activate virtual env with dependencies 
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_huggingface import HuggingFacePipeline 
@@ -29,6 +31,7 @@ app = FastAPI(
 print("Initializing RAG system...")
 print(f"Current working directory: {os.getcwd()}") # Debug: Check current directory
 
+
 if torch.cuda.is_available():
     device = torch.device("cuda")
     print(f"There are {torch.cuda.device_count()} GPU(s) available.")
@@ -36,19 +39,19 @@ if torch.cuda.is_available():
 else:
     device = torch.device("cpu")
     print("No GPU available, using CPU instead.")
-
+#Debug: if using cuda or CPU
 print(f"Using device: {device}")
 
 #Indicate start of embedding model loading
 print("Loading embedding model...")
 embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-print("Embedding model loaded.")
+print("Embedding model loaded.") #Debug: is model loading in
 
 #Indicate start of vectorstore loading
 print("Loading FAISS vectorstore...")
 # Ensure 'faiss_index' directory is in the correct location relative to where you run main.py
 vectorstore = FAISS.load_local("faiss_index/", embedding_model, allow_dangerous_deserialization=True)
-print("FAISS vectorstore loaded.")
+print("FAISS vectorstore loaded.") #Debug: Correctly found vector index
 
 #Replace "ADD ID TOKEN HERE" with your actual Hugging Face token if needed
 model_name = "mistral_model"  # Point to the local directory
