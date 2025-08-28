@@ -1,0 +1,13 @@
+/home/lenue/Desktop/retail_front_end/retail_front_end/build/linux/x64/debug/bundle/retail_front_end
+/home/lenue/Desktop/retail_front_end/retail_front_end/build/linux/x64/debug/bundle/data/icudtl.dat
+/home/lenue/Desktop/retail_front_end/retail_front_end/build/linux/x64/debug/bundle/lib/libflutter_linux_gtk.so
+/home/lenue/Desktop/retail_front_end/retail_front_end/build/linux/x64/debug/bundle/data/flutter_assets/NOTICES.Z
+/home/lenue/Desktop/retail_front_end/retail_front_end/build/linux/x64/debug/bundle/data/flutter_assets/kernel_blob.bin
+/home/lenue/Desktop/retail_front_end/retail_front_end/build/linux/x64/debug/bundle/data/flutter_assets/AssetManifest.json
+/home/lenue/Desktop/retail_front_end/retail_front_end/build/linux/x64/debug/bundle/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+/home/lenue/Desktop/retail_front_end/retail_front_end/build/linux/x64/debug/bundle/data/flutter_assets/AssetManifest.bin
+/home/lenue/Desktop/retail_front_end/retail_front_end/build/linux/x64/debug/bundle/data/flutter_assets/NativeAssetsManifest.json
+/home/lenue/Desktop/retail_front_end/retail_front_end/build/linux/x64/debug/bundle/data/flutter_assets/version.json
+/home/lenue/Desktop/retail_front_end/retail_front_end/build/linux/x64/debug/bundle/data/flutter_assets/FontManifest.json
+/home/lenue/Desktop/retail_front_end/retail_front_end/build/linux/x64/debug/bundle/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+/home/lenue/Desktop/retail_front_end/retail_front_end/build/linux/x64/debug/bundle/data/flutter_assets/shaders/ink_sparkle.frag
